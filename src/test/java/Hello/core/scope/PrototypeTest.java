@@ -22,6 +22,13 @@ public class PrototypeTest {
         System.out.println("bean2 = " + bean2);
 
         assertThat(bean1).isNotSameAs(bean2);
+
+
+//      수작업으로 삭제해줘야한다..
+        bean1.destroy();
+        bean2.destroy();
+
+        ac.close();
     }
 
 
